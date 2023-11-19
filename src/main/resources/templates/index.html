@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nintendo DS Games</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Nintendo DS Games</h1>
+    <form th:action="@{/}" method="get" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Search by title...">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </form>
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>Title</th>
+            <th>Developer</th>
+            <th>Publisher</th>
+            <th>First Released</th>
+            <!-- Add other columns as needed -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="game : ${games}">
+            <td th:text="${game.title}"></td>
+            <td th:text="${game.developer}"></td>
+            <td th:text="${game.publisher}"></td>
+            <td th:text="${game.firstReleased}"></td>
+            <!-- Add other columns as needed -->
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
