@@ -33,7 +33,7 @@
             <td th:text="${game.title}"></td>
             <td th:text="${game.developer}"></td>
             <td th:text="${game.publisher}"></td>
-            <td th:text="${game.firstReleased}"></td>
+            <td th:text="${#dates.format(game.firstReleased, 'dd-MMM-yyyy')}"></td>
             <!-- Add other columns as needed -->
         </tr>
         </tbody>

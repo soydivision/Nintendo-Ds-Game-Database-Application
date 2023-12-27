@@ -1,5 +1,6 @@
 package com.example.nintendo_ds_game_database.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Date;
@@ -11,6 +12,7 @@ public class NintendoDSGame {
     private String title;
     private String developer;
     private String publisher;
+    @Column(name = "firstReleased")
     private Date firstReleased;
     private boolean JP;
     private boolean NA;
