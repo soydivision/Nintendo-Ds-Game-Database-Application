@@ -12,7 +12,6 @@ public class NintendoDSGame {
     private String title;
     private String developer;
     private String publisher;
-    @Column(name = "firstReleased")
     private Date firstReleased;
     private boolean JP;
     private boolean NA;
