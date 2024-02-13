@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
-public class NintendoDSGameController {
+public class NintendoDSGameSearchController {
 
     private final NintendoDSGameService gameService;
 
     @Autowired
-    public NintendoDSGameController(NintendoDSGameService gameService) {
+    public NintendoDSGameSearchController(NintendoDSGameService gameService) {
         this.gameService = gameService;
     }
 

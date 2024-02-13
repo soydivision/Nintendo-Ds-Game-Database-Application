@@ -9,6 +9,7 @@ import java.util.Date;
 public class NintendoDSGame {
 
     @Id
+    private Long id;
     private String title;
     private String developer;
     private String publisher;

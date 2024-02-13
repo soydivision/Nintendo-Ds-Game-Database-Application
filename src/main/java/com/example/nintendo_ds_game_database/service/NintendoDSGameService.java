@@ -4,7 +4,9 @@ import com.example.nintendo_ds_game_database.model.NintendoDSGame;
 import com.example.nintendo_ds_game_database.repository.NintendoDSGameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class NintendoDSGameService {
@@ -23,4 +25,9 @@ public class NintendoDSGameService {
     public List<NintendoDSGame> searchGamesByTitle(String title) {
         return gameRepository.findByTitleContainingIgnoreCase(title);
     }
+
+    public NintendoDSGame findGameById(Long id) {
+        return gameRepository.findById(id);
+    }
+
 }

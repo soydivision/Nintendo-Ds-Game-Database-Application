@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nintendo DS Game Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <h2>Game Details</h2>
+
+    <dl>
+        <dt>Title:</dt>
+        <dd th:text="${game.title}"></dd>
+
+        <dt>Developer:</dt>
+        <dd th:text="${game.developer}"></dd>
+
+        <dt>Publisher:</dt>
+        <dd th:text="${game.publisher}"></dd>
+
+        <dt>First Released:</dt>
+        <dd th:text="${game.firstReleased}"></dd>
+    </dl>
+</div>
+</body>
+</html>

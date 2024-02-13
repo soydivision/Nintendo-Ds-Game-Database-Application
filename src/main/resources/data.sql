@@ -1,5 +1,6 @@
 CREATE TABLE NintendoDSGame (
-    title VARCHAR(100) PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100),
     developer VARCHAR(100),
     publisher VARCHAR(100),
     firstReleased DATE,

@@ -25,7 +25,6 @@
             <th>Developer</th>
             <th>Publisher</th>
             <th>First Released</th>
-            <!-- Add other columns as needed -->
         </tr>
         </thead>
         <tbody>
@@ -34,7 +33,6 @@
             <td th:text="${game.developer}"></td>
             <td th:text="${game.publisher}"></td>
             <td th:text="${#dates.format(game.firstReleased, 'dd-MMM-yyyy')}"></td>
-            <!-- Add other columns as needed -->
         </tr>
         </tbody>
     </table>
