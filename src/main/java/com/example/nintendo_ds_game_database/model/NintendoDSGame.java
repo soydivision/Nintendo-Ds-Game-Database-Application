@@ -17,14 +17,13 @@ public class NintendoDSGame {
     private boolean NA;
     private boolean EU;
     private boolean AU;
+    private String coverUrl;
 
-    // Constructors
     public NintendoDSGame() {
-        // Default constructor
     }
 
     public NintendoDSGame(String title, String developer, String publisher, Date firstReleased,
-                          boolean JP, boolean NA, boolean EU, boolean AU) {
+                          boolean JP, boolean NA, boolean EU, boolean AU, String coverUrl) {
         this.title = title;
         this.developer = developer;
         this.publisher = publisher;
@@ -33,6 +32,7 @@ public class NintendoDSGame {
         this.NA = NA;
         this.EU = EU;
         this.AU = AU;
+        this.coverUrl = coverUrl;
     }
 
     public String getTitle() {
@@ -61,6 +61,10 @@ public class NintendoDSGame {
 
     public Date getFirstReleased() {
         return firstReleased;
+    }
+
+    public String getCoverUrl() {
+        return coverUrl;
     }
 
     public void setFirstReleased(Date firstReleased) {
@@ -97,5 +101,9 @@ public class NintendoDSGame {
 
     public void setAU(boolean AU) {
         this.AU = AU;
+    }
+
+    public void setImageUrl(String coverUrl) {
+        this.coverUrl = coverUrl;
     }
 }

@@ -7,15 +7,20 @@ CREATE TABLE NintendoDSGame (
     JP BOOLEAN,
     NA BOOLEAN,
     EU BOOLEAN,
-    AU BOOLEAN
+    AU BOOLEAN,
+    coverUrl VARCHAR(255) DEFAULT NULL
 );
 
 
+INSERT INTO NintendoDSGame (title, developer, publisher, firstReleased, JP, NA, EU, AU, coverUrl)
+VALUES
+('Mario Kart DS', 'Nintendo EAD', 'Nintendo', '2005-11-14', TRUE, FALSE, TRUE, TRUE,'https://upload.wikimedia.org/wikipedia/en/8/86/Mario_Kart_DS_cover.jpg'),
+('New Super Mario Bros.', 'Nintendo EAD', 'Nintendo', '2006-05-15', FALSE, FALSE, TRUE, FALSE, 'https://upload.wikimedia.org/wikipedia/ru/d/db/NewSuperMarioBrothers.jpg');
+
+--Hereafter games have no covers, therefore coverUrl is omitted
 INSERT INTO NintendoDSGame (title, developer, publisher, firstReleased, JP, NA, EU, AU)
 VALUES
-('New Super Mario Bros.', 'Nintendo EAD', 'Nintendo', '2006-05-15', FALSE, FALSE, TRUE, FALSE),
 ('Pokémon Diamond', 'Game Freak', 'Nintendo', '2006-09-28', FALSE, TRUE, TRUE, FALSE),
-('Mario Kart DS', 'Nintendo EAD', 'Nintendo', '2005-11-14', TRUE, FALSE, TRUE, TRUE),
 ('The Legend of Zelda: Phantom Hourglass', 'Nintendo EAD', 'Nintendo', '2007-06-23', FALSE, TRUE, TRUE, TRUE),
 ('Animal Crossing: Wild World', 'Nintendo EAD', 'Nintendo', '2005-11-23', TRUE, TRUE, TRUE, FALSE),
 ('Professor Layton and the Curious Village', 'Level-5', 'Nintendo', '2007-02-15', TRUE, FALSE, TRUE, TRUE),
