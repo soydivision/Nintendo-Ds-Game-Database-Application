@@ -13,13 +13,13 @@ CREATE TABLE NintendoDSGame (
 
 INSERT INTO NintendoDSGame (title, developer, publisher, firstReleased, JP, NA, EU, AU)
 VALUES
-('New Super Mario Bros.', 'Nintendo EAD', 'Nintendo', '2006-05-15', TRUE, TRUE, TRUE, TRUE),
-('Pokémon Diamond', 'Game Freak', 'Nintendo', '2006-09-28', TRUE, TRUE, TRUE, TRUE),
-('Mario Kart DS', 'Nintendo EAD', 'Nintendo', '2005-11-14', TRUE, TRUE, TRUE, TRUE),
-('The Legend of Zelda: Phantom Hourglass', 'Nintendo EAD', 'Nintendo', '2007-06-23', TRUE, TRUE, TRUE, TRUE),
-('Animal Crossing: Wild World', 'Nintendo EAD', 'Nintendo', '2005-11-23', TRUE, TRUE, TRUE, TRUE),
-('Professor Layton and the Curious Village', 'Level-5', 'Nintendo', '2007-02-15', TRUE, TRUE, TRUE, TRUE),
+('New Super Mario Bros.', 'Nintendo EAD', 'Nintendo', '2006-05-15', FALSE, FALSE, TRUE, FALSE),
+('Pokémon Diamond', 'Game Freak', 'Nintendo', '2006-09-28', FALSE, TRUE, TRUE, FALSE),
+('Mario Kart DS', 'Nintendo EAD', 'Nintendo', '2005-11-14', TRUE, FALSE, TRUE, TRUE),
+('The Legend of Zelda: Phantom Hourglass', 'Nintendo EAD', 'Nintendo', '2007-06-23', FALSE, TRUE, TRUE, TRUE),
+('Animal Crossing: Wild World', 'Nintendo EAD', 'Nintendo', '2005-11-23', TRUE, TRUE, TRUE, FALSE),
+('Professor Layton and the Curious Village', 'Level-5', 'Nintendo', '2007-02-15', TRUE, FALSE, TRUE, TRUE),
 ('Brain Age: Train Your Brain in Minutes a Day!', 'Nintendo', 'Nintendo', '2005-05-19', TRUE, TRUE, TRUE, TRUE),
-('Phoenix Wright: Ace Attorney', 'Capcom', 'Capcom', '2005-10-12', TRUE, TRUE, TRUE, TRUE),
-('Final Fantasy III', 'Square Enix', 'Square Enix', '2006-08-24', TRUE, TRUE, TRUE, TRUE),
-('Castlevania: Dawn of Sorrow', 'Konami', 'Konami', '2005-08-25', TRUE, TRUE, TRUE, TRUE);
+('Phoenix Wright: Ace Attorney', 'Capcom', 'Capcom', '2005-10-12', TRUE, TRUE, TRUE, FALSE),
+('Final Fantasy III', 'Square Enix', 'Square Enix', '2006-08-24', TRUE, FALSE, TRUE, TRUE),
+('Castlevania: Dawn of Sorrow', 'Konami', 'Konami', '2005-08-25', FALSE, TRUE, FALSE, TRUE);

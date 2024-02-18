@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Nintendo DS Games</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add your CSS links here -->
 </head>
 <body>
-<div class="container">
-    <h1>Nintendo DS Games</h1>
-    <form th:action="@{/}" method="get" class="mb-3">
-        <div class="input-group">
-            <input type="text" name="search" class="form-control" placeholder="Search by title...">
-            <div class="input-group-append">
-                <button type="submit" class="btn btn-primary">Search</button>
-            </div>
-        </div>
-    </form>
+<header>
+    <h1>Welcome to Nintendo DS Games!</h1>
+    <p>Discover a vast collection of Nintendo DS games.</p>
+</header>
 
-    <table class="table">
-        <thead class="thead-dark">
-        <tr>
-            <th>Title</th>
-            <th>Developer</th>
-            <th>Publisher</th>
-            <th>First Released</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="game : ${games}">
-            <td th:text="${game.title}"></td>
-            <td th:text="${game.developer}"></td>
-            <td th:text="${game.publisher}"></td>
-            <td th:text="${#dates.format(game.firstReleased, 'dd-MMM-yyyy')}"></td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+<main>
+    <section>
+<!--        <h2>Featured Games</h2>-->
+<!--        <div class="games">-->
+<!--            &lt;!&ndash; Loop through featured games &ndash;&gt;-->
+<!--            <div th:each="game : ${featuredGames}">-->
+<!--                <div class="game">-->
+<!--                    <img th:src="${game.imageUrl}" alt="Game Image">-->
+<!--                    <h3 th:text="${game.title}"></h3>-->
+<!--                    <p th:text="${game.description}"></p>-->
+<!--                    <a th:href="@{/games/{id}(id=${game.id})}">View Details</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </section>
+
+    <section>
+        <h2>All Games</h2>
+<!--        <div class="games">-->
+<!--            &lt;!&ndash; Loop through all games &ndash;&gt;-->
+<!--            <div th:each="game : ${allGames}">-->
+<!--                <div class="game">-->
+<!--                    <img th:src="${game.imageUrl}" alt="Game Image">-->
+<!--                    <h3 th:text="${game.title}"></h3>-->
+<!--                    <p th:text="${game.description}"></p>-->
+<!--                    <a th:href="@{/games/{id}(id=${game.id})}">View Details</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Nintendo DS Games. All rights reserved.</p>
+</footer>
+
+<!-- Add your JavaScript links here -->
 </body>
 </html>

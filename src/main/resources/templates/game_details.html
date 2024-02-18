@@ -9,19 +9,37 @@
 <div>
     <h2>Game Details</h2>
 
-    <dl>
-        <dt>Title:</dt>
-        <dd th:text="${game.title}"></dd>
+<!--    <dl>-->
+<!--        <dt>Title:</dt>-->
+<!--        <dd th:text="${game.title}"></dd>-->
 
-        <dt>Developer:</dt>
-        <dd th:text="${game.developer}"></dd>
+<!--        <dt>Developer:</dt>-->
+<!--        <dd th:text="${game.developer}"></dd>-->
 
-        <dt>Publisher:</dt>
-        <dd th:text="${game.publisher}"></dd>
+<!--        <dt>Publisher:</dt>-->
+<!--        <dd th:text="${game.publisher}"></dd>-->
 
-        <dt>First Released:</dt>
-        <dd th:text="${game.firstReleased}"></dd>
-    </dl>
+<!--        <dt>First Released:</dt>-->
+<!--        <dd th:text="${game.firstReleased}"></dd>-->
+<!--    </dl>-->
+    <header>
+        <h1 th:text="${game.title}"></h1>
+        <p>Developer: <span th:text="${game.developer}"></span></p>
+        <p>Publisher: <span th:text="${game.publisher}"></span></p>
+        <p>First Released: <span th:text="${#dates.format(game.firstReleased, 'dd MMMM yyyy')}"></span></p>
+        <p>Available in:</p>
+        <ul>
+            <li th:if="${game.JP}">Japan</li>
+            <li th:if="${game.NA}">North America</li>
+            <li th:if="${game.EU}">Europe</li>
+            <li th:if="${game.AU}">Australia</li>
+        </ul>
+    </header>
+
+    <footer>
+        <p>&copy; 2024 Nintendo DS Games. All rights reserved.</p>
+    </footer>
+
 </div>
 </body>
 </html>

@@ -20,7 +20,7 @@ public class NintendoDSGameSearchController {
         this.gameService = gameService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/search")
     public String index(@RequestParam(required = false) String search, Model model) {
         List<NintendoDSGame> games;
         if (search != null && !search.isEmpty()) {
@@ -29,6 +29,6 @@ public class NintendoDSGameSearchController {
             games = gameService.getAllGames();
         }
         model.addAttribute("games", games);
-        return "index";
+        return "search";
     }
 }

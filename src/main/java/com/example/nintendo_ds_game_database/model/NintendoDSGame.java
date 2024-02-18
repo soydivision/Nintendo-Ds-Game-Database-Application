@@ -1,6 +1,5 @@
 package com.example.nintendo_ds_game_database.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Date;
@@ -36,7 +35,6 @@ public class NintendoDSGame {
         this.AU = AU;
     }
 
-    // Getters and Setters
     public String getTitle() {
         return title;
     }

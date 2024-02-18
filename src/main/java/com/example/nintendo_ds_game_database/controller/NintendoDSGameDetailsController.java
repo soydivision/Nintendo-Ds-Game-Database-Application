@@ -1,6 +1,4 @@
 package com.example.nintendo_ds_game_database.controller;
-//NintendoDSGameDetailsController
-
 
 import com.example.nintendo_ds_game_database.model.NintendoDSGame;
 import com.example.nintendo_ds_game_database.service.NintendoDSGameService;
@@ -9,8 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import java.util.Optional;
 
 @Controller
 public class NintendoDSGameDetailsController {
