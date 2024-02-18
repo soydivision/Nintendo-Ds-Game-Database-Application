@@ -4,10 +4,10 @@ This is a simple web application built with Spring Boot that allows users to sea
 
 ## Features
 
-- **Game details Page:** Users can search for DS games by title (soon to be implemented by developer, or publisher, year)
-- **Search:** Users can search for DS games by title, developer, or publisher.
+- **Game details Page:** Users can enter details page.
+- **Search:** Users can search for DS games by title (soon to be implemented by developer, or publisher, year)
 - **H2 Database:** Games information is stored in an in-memory H2 database.
-- **Thymeleaf Templates:** Utilizes Thymeleaf for server-side HTML rendering.
+- **Thymeleaf Templates:** Utilizes powerful Thymeleaf for server-side HTML rendering.
 
 ## Prerequisites
 
